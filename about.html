@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FarissCreative</title>
+    <link rel="stylesheet" href="responsiveabout.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+</head>
+
+
+
+<body class="body">
+    <header>
+        <nav class="nav">
+            <div class="navbar">
+                <ol class="navbar-right">
+                    <a href="labpage.html"> Lab</a>
+                    <a href="about.html">About</a>
+                    <a href="frontpage.html">Home</a>
+                </ol>
+                <div class="logo">
+                    <img src="img/typograficlogo.png" alt="logo">
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section>
+            <div class="eyes">
+                <div class="eye">
+                    <div class="eyeball"></div>
+                </div>
+
+                <div class="eye">
+                    <div class="eyeball"></div>
+                </div>
+            </div>
+
+            <script>
+                // adding movement with mouse to the drawn eyeball from th css. 
+                var eyeballs = document.getElementsByClassName("eyeball");
+                document.onmousemove = function () {
+
+                    //gets the mouse updatedcoordinates within the window frame. 
+                    var x = event.clientX * 100 / window.innerWidth + "%";    //gives horizontal coordinate within the applications viewport. 
+                    var y = event.clientY * 100 / window.innerHeight + "%"; //gives vertical coordinate within the applications viewport.
+
+                    // incrementing one in the loop
+                    // 2 = 2 eyes, will get exception if you over 
+                    for (var i = 0; i < 2; i++) {
+                        eyeballs[i].style.left = x; //
+                        eyeballs[i].style.top = y;
+                    }
+                }
+            </script>
+
+
+        </section>
+
+
+    </main>
+
+
+    <div class="wrapper">
+        <div class="columns">
+            <div>
+                <div class="column">
+                    <a href="https://www.instagram.com/farissdrawings/"><img src="icons/instagram.png" alt=""
+                            class="link"></a>
+                </div>
+
+                <div class="column">
+                    <a href="https://www.linkedin.com/in/nadin-fariss-b4b741194"><img src="icons/linkedin.png" alt=""
+                            class="link"></a>
+                </div>
+
+
+                <div class="column">
+                    <a class="link" href="#"><img src="icons/email.png" alt="" class="link"></a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="columns">
+            <h2>Who am I?</h2>
+            <p> My name is Nadin Fariss and studying at UCL as a multimedia designer.
+                I have a background in Software Engineer and I am now taking a new approach in my career by becoming
+                a
+                Multimedia Designer.
+                This career would let me incorporate my more artistic perspective on obstacles, that is not only
+                solutions with high end perfomance but also can empathize on achieving a more user friendly GUI.
+
+            <h3>Competence</h3>
+
+            My practice extends from installations to interactive UI websites and applications. | Adobe
+            animate | XD | InDesign | Photoshop |illustartor and 2D digital assets production.
+
+            <h3>Tools</h3>
+            wordpress | visual studio code | netbeans | Github | SCRUM
+
+            <h3>Web development</h3>
+            HTML | CSS | JAVA
+
+            <h3> Language</h3>
+            Dansk | Engelsk
+            </p>
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+    <footer>
+        <div class="some">
+            <p>Instagram: @farissdrawings</p>
+            <p>LinkedIn: Nadin Fariss</p>
+            <p>Mail: FarissBusiness@gmail.com
+
+            </p>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FarissCreative</title>
+    <link rel="stylesheet" href="responsiv.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+</head>
+
+<body class="body">
+    <header>
+
+        <!--navigationsbag-->
+        <nav class="nav">
+            <div class="navbar">
+                <!--ol tag for ordent liste-->
+                <ol>
+                    <a href="labpage.html"> Lab</a>
+                    <a href="about.html"> About</a>
+                    <a href="frontpage.html"> Home</a>
+                </ol>
+                <div class="logo">
+                    <img src="img/typograficlogo.png" alt="logo">
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!--ansigt-->
+    <section>
+
+        <div class="eyes">
+            <div class="eye">
+                <div class="eyeball"></div>
+            </div>
+
+            <div class="eye">
+                <div class="eyeball"></div>
+            </div>
+        </div>
+        <div class="eyes">
+            <div class="nose"></div>
+        </div>
+
+        <script>
+            // tilføje bevægelse med musen til de tegnet øjeæble(css).
+            var eyeballs = document.getElementsByClassName("eyeball");
+            document.onmousemove = function () {
+                var x = event.clientX * 100 / window.innerWidth + "%";
+                var y = event.clientY * 100 / window.innerHeight + "%";
+                for (var i = 0; i < 2; i++) {
+                    eyeballs[i].style.left = x;
+                    eyeballs[i].style.top = y;
+                }
+            }
+        </script>
+
+
+    </section>
+
+    <!--bevægene baggrund-->
+    <section id="wrapper">
+        <div class="circles1">
+            <!--ul tag for uordent liste a billeder-->
+            <ul>
+                <img src="img/bleusmall.png" alt="">
+                <img src="img/redbig.png" alt="">
+                <img src="img/redopen.png" alt="">
+            </ul>
+        </div>
+        <div class="circles2">
+            <!--ul tag for uordent liste a billeder-->
+            <img src="img/blueopen.png" alt="">
+            <img src="img/bigblue.png" alt="">
+            <img src="img/bluesmallopen.png" alt="">
+
+        </div>
+
+        <div class="circles3">
+            <!--ul tag for uordent liste a billeder-->
+            <ul class="list-img">
+                <img class="img" src="img/redopen.png" alt="">
+                <img src="img/orange.png" alt="">
+                <img src="img/bluesmallopen.png" alt="">
+            </ul>
+
+
+        </div>
+
+    </section>
+
+
+    <!--intro info-->
+    <aside>
+        <div class="columns">Hi! it is Fariss.
+            <br>
+            I am a multimedia designer and
+            I like to make interactive design, which makes the user experience a bit funnier.
+        </div>
+    </aside>
+
+</body>
+
+
+</html>

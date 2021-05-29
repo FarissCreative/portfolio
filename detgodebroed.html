@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FarissCreative</title>
+    <link rel="stylesheet" href="responsivedetgodebroed.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+</head>
+
+<body class="body">
+    <aside>
+        <div>
+
+            <span class="titel1">
+                <h1>Det
+                </h1>
+            </span>
+            <span class="titel2">
+                <h1>Gode
+                </h1>
+            </span>
+            <span class="titel3">
+                <h1>Broed
+                </h1>
+            </span>
+
+        </div>
+
+
+        <span class="txtinfo">
+            <p>wireframe app</p>
+
+        </span>
+
+
+        <span class="info">
+            <p>SCROLL AND LOOK</p>
+
+        </span>
+
+    </aside>
+
+
+
+    <header>
+        <nav class="nav">
+            <div class="navbar">
+                <ol class="navbar-right">
+                    <a href="labpage.html"> Lab</a>
+                    <a href="about.html">About</a>
+
+                    <a href="frontpage.html">Home</a>
+                </ol>
+                <div class="logo">
+                    <img src="img/typograficlogo.png" alt="logo">
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section>
+            <div class="eyes">
+                <div class="eye">
+                    <div class="eyeball"></div>
+                </div>
+
+                <div class="eye">
+                    <div class="eyeball"></div>
+                </div>
+            </div>
+
+            <script>
+                // adding movement with mouse to the drawn eyeball from th css. 
+                var eyeballs = document.getElementsByClassName("eyeball");
+                document.onmousemove = function () {
+
+                    //gets the mouse updatedcoordinates within the window frame. 
+                    var x = event.clientX * 100 / window.innerWidth + "%";    //gives horizontal coordinate within the applications viewport. 
+                    var y = event.clientY * 100 / window.innerHeight + "%"; //gives vertical coordinate within the applications viewport.
+
+                    // incrementing one in the loop
+                    // 2 = 2 eyes, will get exception if you over 
+                    for (var i = 0; i < 2; i++) {
+                        eyeballs[i].style.left = x; //
+                        eyeballs[i].style.top = y;
+                    }
+                }
+            </script>
+
+
+        </section>
+
+
+    </main>
+
+
+    <div class="wrapper">
+        <div class="columns">
+            <div class="column">
+                <h2> Year</h2>
+                <p>2021</p>
+            </div>
+
+            <div class="column">
+                <h2> Tools</h2>
+                <img src="icons/adobexd.png" alt="" class="link">
+            </div>
+            <div class="column">
+                <img src="icons/adobephotoshop.png" alt="" class="link">
+            </div>
+        </div>
+
+
+        <div class="columns">
+            <p>
+                <br>
+                <a href="https://det-gode-broed.dk/">The Gode Broed</a>
+
+                is a small organic bakery in the
+                middle of
+                Odense. This family bakery has been around for
+                16 years. At Det Gode Brød, bread, buns and cakes are baked from biodynamic and organic ingredients of
+                the very best quality according to principles that make the bread healthier, longer, more durable and
+                give it a fine aroma.
+                The bakery only sells their product through their physical store, and makes bread to order which is done
+                over phone opening hours.
+
+                <br>
+
+                The desire in this task was to optimize their platform.
+            </p>
+
+            <h2>what did i do</h2>
+            <p>As a multimedidadesigner I worked on giving the former website a responsiv design that would optimize
+                and enhancing the company business and branding during the pandemic restrictions.
+                <br>
+
+                I designed the website to a responsiv mobile app platform. The intention was to optimze the workflow for
+                the
+                company as well as make more options for communication between the company and comstumers.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <aside class="overskrift">
+        <h1>Low fidelity wireframe</h1>
+    </aside>
+
+
+    <div class="gallery">
+        <figure class="gallery__item gallery__item--1">
+            <div class="container">
+                <img src="img/detgodebroed/low/Forside-1.png" class="gallery__img" alt="Image 1">
+
+        </figure>
+
+        <figure class="gallery__item gallery__item--2">
+            <div class="container">
+                <img src="img/detgodebroed/low/Favorite.png" class="gallery__img" alt="Image 2">
+            </div>
+        </figure>
+
+
+        <figure class="gallery__item gallery__item--3">
+            <div class="container">
+                <img src="img/detgodebroed/low/Bestilling-side.png" class="gallery__img" alt="Image 3">
+            </div>
+        </figure>
+
+        <figure class="gallery__item gallery__item--4">
+            <div class="container">
+                <img src="img/detgodebroed/low/kontakt.png" class="gallery__img" alt="Image 4 ">
+            </div>
+        </figure>
+    </div>
+
+    <aside class="overskrift">
+        <h1>High fidelity wireframe</h1>
+    </aside>
+
+
+    <div class="gallery">
+        <figure class="gallery__item gallery__item--1">
+            <div class="container">
+                <img src="img/detgodebroed/Forside-2.png" class="gallery__img" alt="Image 1">
+
+        </figure>
+
+        <figure class="gallery__item gallery__item--2">
+            <div class="container">
+                <img src="img/detgodebroed/Favorite-2.png" class="gallery__img" alt="Image 2">
+            </div>
+        </figure>
+
+
+        <figure class="gallery__item gallery__item--3">
+            <div class="container">
+                <img src="img/detgodebroed/Bestilling-side-2.png" class="gallery__img" alt="Image 3">
+            </div>
+        </figure>
+
+        <figure class="gallery__item gallery__item--4">
+            <div class="container">
+                <img src="img/detgodebroed/Kontakt-side.png" class="gallery__img" alt="Image 4 ">
+            </div>
+        </figure>
+    </div>
+
+    <footer>
+        <div class="some">
+            <p>Instagram: @farissdrawings</p>
+            <p>LinkedIn: Nadin Fariss</p>
+            <p>Mail: FarissBusiness@gmail.com
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

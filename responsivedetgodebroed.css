@@ -1,0 +1,625 @@
+/* genereal for all formates*/
+.body {
+    background-color: #f2d2a4;
+    color: rgb(0, 0, 0);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16;
+    padding: 0px;
+    padding-top: 60px;
+    }
+
+     /*øjne*/
+     .eyes{
+      position: absolute;
+      top: 35%;
+      transform: translateY(-50%);
+      width: 100%;
+      text-align: center;
+      margin-top: 0px;
+    }
+
+    .eye{
+      width: 250px;
+      height: 300px;
+      background: #fff;
+      display: inline-block;
+      margin: 100px; /* afstand mellem øjne elementerne*/
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    
+/*pupiller*/
+    .eyeball{
+      width: 80px;
+      height: 80px;
+      background: #000;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      border-radius: 50%;
+      border: 15px;
+    }
+              /* navigation*/
+              .navbar {
+                position: fixed; /* Set the navbar to fixed position */
+                top: 0; /* Position the navbar at the top of the page */
+                width: 100%; /* Full width */
+                z-index: 100; /* puts the nav bar in the z position */
+                overflow:hidden;
+                background-color: #f2d2a4;
+              }
+              
+              /* Links inside the navbar   display: block; */
+              .navbar a {
+                text-decoration:none;
+                padding:15px 0; /* give distance within the element*/
+                width:100px;
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color:black; 
+                float:right;
+                text-align:center;
+                border-radius:20px;
+                margin: 10px; /* give distance around the element*/
+              
+              }
+                
+              /* Change color when mouse is over*/
+              .navbar a:hover {
+                background: whitesmoke;
+                color:rgb(0, 0, 0);
+              
+              }
+
+              /*logo*/
+            .logo img{
+                width: 100px;
+                height: 50px;
+                margin-left: 100px;
+            }
+
+            label{
+                width: 20px;
+                height: 20px;
+                transform: scale(0.5);
+            }
+            /*tekst*/
+
+            h2{
+                position: center;
+              }
+              h3{
+                padding-top: 30px;
+                position: center;
+              }
+
+              /*opsætning af grid*/
+              
+              .columns {
+                color:#000;
+                padding: 1rem;
+                height: 500px; 
+                padding: auto;
+              }
+
+              /*tekst hover for "det gode brød tekst"*/
+
+              .columns a{
+                font-weight: bolder;
+                text-decoration: none;
+                color: black;
+              }
+
+              .columns a:hover{
+                 color: #006738;
+
+              }
+              
+              .column{
+                text-align: center;
+                margin: 50px;
+              }
+              
+              .wrapper {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: grid;
+                grid-gap: 4rem;
+                margin-bottom: -200px;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 10rem;
+                margin-top: 750px;
+               }              
+              
+               /*iconer*/
+              .link{
+                width: 30%;
+                height: 30%;
+              
+              }
+              
+             
+
+.titel1{
+    margin-left: 300px;
+    margin-top: -100px;
+    z-index: 100;
+    position:absolute;
+    font-size: 80px;
+}
+
+.titel1 h1:hover{
+    color: #006738;
+}
+
+.titel2{
+    margin-left: 600px;
+    margin-top: 50px;
+    z-index: 100;
+    position:absolute;
+    font-size: 80px;
+}
+
+.titel2 h1:hover{
+    color: #006738;
+}
+
+
+.titel3{
+    margin-left: 300px;
+    z-index: 100;
+    margin-top: 200px;
+    position:absolute;
+    font-size: 80px;
+}
+.titel3 h1:hover{
+    color: #006738;
+}
+
+.txtinfo p{
+    margin-left: 1110px;
+    z-index: 100;
+    margin-top: 450px;
+    position:absolute;
+    font-size: 25px;
+}
+
+.info p{
+    margin-left: 100px;
+    z-index: 100;
+    margin-top: 550px;
+    position:absolute;
+    font-size: 15px;
+}
+
+
+/*gallery*/
+
+
+.gallery {
+  margin-top: -300px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 15px;
+  margin-bottom: -400px;
+}
+
+.gallery__img {
+width: 100%;
+height: 100%;   
+}
+/*overlay effekt over billederne*/
+
+.container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 5px solid rgb(21, 21, 22);
+}
+
+
+/* the gode brød low/high fidelity*/
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 10;
+}
+
+.gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 10;
+}
+.gallery__item--3 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 10;
+}
+
+.gallery__item--4 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 5;
+  grid-row-end: 10;
+}
+
+
+footer{
+  background: #1D1A19;
+  color: white;
+  height: 50px;
+  text-align: center;
+  padding: auto;
+  display: block;
+  width: 100%;
+  margin-top: 450px;
+ 
+}
+/*står for kontakt info i footer*/
+.some{
+  display: flex;
+  justify-content:center;
+  font-size: 12px;
+
+}
+
+  .some p{
+    flex: 0 0 120px;
+    margin: 10px 100px 0px 100px;      
+  }
+
+  .overskrift h1{
+    margin-left: 600px;
+    margin-top: 500px;
+  }
+
+  .overskrift h1:hover{
+    color: #006738;
+  }
+               
+
+/* smallest sizing screen (iphone 5/SE format/ also works at phone 6/7/8 format)*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+
+
+
+/* navigation bar */
+.navbar {
+  transform: scale(1.3); 
+  margin-left: -500px;
+
+}
+
+.nav{
+  margin-left: 200px;
+  margin-top: 60px;
+  z-index: 100;
+  position:absolute;
+}
+
+/* Links indeni navbar   */
+.navbar a {
+  margin-top: 20px;
+  font-size: 30px;
+  padding-left: 70px;
+  padding-right: 20px;
+  
+
+}
+
+/*logo*/
+
+.logo{
+    width: 200px;
+    height: 100%;
+    margin-top: 30px;
+    margin-left: 530px;
+  }
+  
+    .logo img{
+        width: 100%;
+        height: 100%;
+        margin-left: -80px;
+    }
+
+aside{
+  margin-top: 200px;
+  margin-left: 100px;
+  padding-bottom: 100px;
+}
+
+
+/*titel*/
+.txtinfo p{
+  margin-left: 800px;
+  margin-top: 800px;
+  font-size: 40px;
+}
+
+.info p{
+  margin-left: 100px;
+  margin-top: 900px;
+  font-size: 25px;
+}
+
+
+   /*opsætning af grid*/
+
+.wrapper { 
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10rem;
+   }
+
+
+   .columns{
+    padding-top: 200px;
+    padding-bottom: 400px;
+    font-size: 35px;
+  }
+  /*billede galleri*/
+   .gallery{
+    grid-template-columns: repeat(3, 3fr);
+    grid-gap: 10rem;
+    margin-top: -900px;
+   }
+
+   /* the gode brød low/high fidelity*/
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 10;
+}
+
+.gallery__item--2 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 10;
+  grid-row-end: 15;
+}
+.gallery__item--3 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 15;
+  grid-row-end: 20;
+}
+
+.gallery__item--4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 20;
+  grid-row-end: 25;
+}
+  
+   
+/*øjne elementer */
+
+.eyes{
+    margin-top: -100px;
+  }
+
+  .eye{
+    width: 400px;
+    height: 450px;
+    background: #fff;
+    display: inline-block;
+    margin: 90px; /* space between the eyes*/
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .eyeball{
+    width: 120px;
+    height: 120px;
+  }
+  
+ 
+
+
+footer{
+    margin-top: 600px;
+}
+
+/*overskrifter*/
+.overskrift h1{
+  margin-left: 300px;
+  margin-top: 600px;
+  font-size: 50px;
+}
+
+}
+
+
+/* iPad format */
+@media only screen 
+and (min-device-width : 768px)
+and (min-device-height : 1024px)
+and (max-device-height : 1024px) {
+
+  .logo{
+    width: 100px;
+    height: 50px;
+    margin-left: 150px;
+  }
+  
+  .navbar{
+      height: 400px;
+  }
+  
+  /* Links iinden i navbar'en */
+  .navbar a {
+    font-size: 40px;
+    transform: scale(2.5);
+    margin-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+  
+  }
+    .logo img{
+        width: 400px;
+        height: 200px;
+        margin-left: -80px;
+    }
+
+    /*øjne*/
+     /*øjne elementeren*/
+
+     .eyes{
+      position: absolute;
+      top: 30%;
+      transform: translateY(-50%);
+      width: 100%;
+      text-align: center;
+      margin-top: 0px;
+    }
+
+    .eye{
+      width: 800px;
+      height: 850px;
+      background: #fff;
+      display: inline-block;
+      margin: 300px; /* afstand mellem øjne elementerne*/
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .eyeball{
+      width: 200px;
+      height: 200px;
+    }
+
+ 
+aside{
+  margin-top: 200px;
+  margin-left: 100px;
+  padding-bottom: 100px;
+}
+
+/*titel*/
+.txtinfo p{
+  margin-left: 2300px;
+  margin-top: 1200px;
+  font-size: 90px;
+}
+
+.info p{
+  margin-left: 200px;
+  margin-top: 1500px;
+  font-size: 70px;
+}
+
+/*titel*/
+.titel1{
+  margin-left: 500px;
+  margin-top: 100px;
+  z-index: 100;
+  position:absolute;
+  font-size: 150px;
+}
+
+
+.titel2{
+  margin-left: 1500px;
+  margin-top: 400px;
+  z-index: 100;
+  position:absolute;
+  font-size: 150px;
+}
+
+.titel3{
+  margin-left: 500px;
+  z-index: 100;
+  margin-top: 800px;
+  position:absolute;
+  font-size: 150px;
+}
+
+
+
+   /*opsætning af grid*/
+
+.wrapper { 
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10rem;
+   }
+
+
+   .columns{
+     margin-top: 500px;
+    padding-top: 200px;
+    padding-bottom: 800px;
+    font-size: 90px;
+  }
+  /*billede galleri*/
+   .gallery{
+    grid-template-columns: repeat(1, 3fr);
+    grid-gap: 10rem;
+    margin-top: -1000px;
+    margin-bottom: -3000px;
+   }
+
+
+/*overskrifter*/
+   .overskrift h1{
+    margin-top: 3500px;
+    font-size: 150px;
+  }
+
+
+   /* the gode brød low/high fidelity*/
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 10;
+}
+
+.gallery__item--2 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 10;
+  grid-row-end: 15;
+}
+.gallery__item--3 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 15;
+  grid-row-end: 20;
+}
+
+.gallery__item--4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 20;
+  grid-row-end: 25;
+}
+  
+
+/*overskrifter*/
+
+footer{
+  margin-top: 3500px;
+  height: 200px;
+}
+
+.some p{
+font-size: 40px;
+margin-left: 250px;
+margin-right: 300px;
+}
+
+}
+

@@ -1,0 +1,498 @@
+/* genereal for all formates*/
+.body {
+    background-color: #f2d2a4;
+    color: rgb(0, 0, 0);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16;
+    padding: 0px;
+    padding-top: 60px;
+    background-size: cover;
+    background-repeat: no-repea;
+    }
+
+              /* navigation*/
+              .navbar {
+                position: fixed; /* Set the navbar to fixed position */
+                top: 0; /* Position the navbar at the top of the page */
+                width: 100%; /* Full width */
+                z-index: 1; /* puts the nav bar in the z position */
+                overflow:hidden;
+                background-color: #f2d2a4;
+              }
+              
+              /* Links inside the navbar   display: block; */
+              .navbar a {
+                text-decoration:none;
+                padding:15px 0; /* give distance within the element*/
+                width:100px;
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color:black; 
+                float:right;
+                text-align:center;
+                border-radius:20px;
+                margin: 10px; /* give distance around the element*/
+              
+              }
+                
+              /* Change color when mouse is over*/
+              .navbar a:hover {
+                background: whitesmoke;
+                color:rgb(0, 0, 0);
+              
+              }
+
+              /*logo*/
+            .logo img{
+                width: 100px;
+                height: 50px;
+                margin-left: 100px;
+            }
+
+  
+      .gallery {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 5vw);
+        grid-gap: 15px;
+    }
+  
+    .gallery__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;   
+       
+  }
+
+  .gallery__img p{
+    margin-top: -10px;
+    font-size: 20px;
+  }
+
+  .gallery__img h2{
+    font-size: 35px;
+  }
+
+  /*overlay effekt over billederne*/
+  .container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 5px solid rgb(21, 21, 22);
+  }
+
+  .overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .9s ease;
+  }
+
+  .container:hover .overlay {
+    opacity: 5;
+    font-size: 16;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  
+  }
+
+  .overlay figcaption{
+    background-color:  #f2d2a4;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    text-align: center;
+
+  }
+
+  figcaption a:visited{
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(21, 21, 22);
+    padding: 10px 10px;
+
+  }
+
+  figcaption{
+    display: block;
+  }
+
+  figcaption h3:hover{
+    background: whitesmoke;
+    color:rgb(0, 0, 0);
+    border-radius: 50px;
+  
+  }
+  figcaption a{
+    text-decoration: none;
+     color: black;
+  }
+
+
+
+
+  /*grid opsætning af billerne */
+  
+  .gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    color: #000000;
+    font-size: 25px;
+    position: relative;
+  }
+  
+  /* the gode brød*/
+  .gallery__item--2 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 9;
+  }
+  
+  .gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 10;
+    grid-row-end: 18;
+  }
+
+
+  .gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 18;
+    grid-row-end: 45;
+  }
+
+  .gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 45;
+    grid-row-end: 60;
+  }
+
+
+
+  footer{
+    background: #1D1A19;
+    color: white;
+    height: 50px;
+    text-align: center;
+    padding: auto;
+    display: block;
+    width: 100%;
+    margin-top: 100px;
+    
+   
+  }
+  /*står for kontakt info i footer*/
+  .some{
+    display: flex;
+    justify-content:center;
+    font-size: 12px;
+
+  }
+  
+    .some p{
+      flex: 0 0 120px;
+      margin: 10px 100px 0px 100px;      
+    }
+
+  figcaption h2{
+    font-size: 70px;
+  }
+
+  figcaption p{
+    font-size: 45px;
+  }
+
+  .overlay h2 {
+    font-size: 25px;
+  }
+  .overlay img{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .overlay h3{
+    font-size: 20px;
+  }
+
+   
+/* smallest sizing screen (iphone 5/SE format/ also works at phone 6/7/8 format)*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+
+
+.header{
+  width: 1200px;
+  height: 1200px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+/* navigation bar */
+.navbar {
+  transform: scale(1.3); 
+  margin-left: -500px;
+
+}
+
+.nav{
+  margin-left: 200px;
+  margin-top: 60px;
+  z-index: 100;
+  position:absolute;
+}
+
+/* Links indeni navbar   */
+.navbar a {
+  margin-top: 20px;
+  font-size: 30px;
+  padding-left: 70px;
+  padding-right: 20px;
+  
+
+}
+
+.gallery__img p{
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+.gallery__img h2{
+  font-size: 55px;
+}
+
+
+/*logo*/
+
+.logo{
+    width: 200px;
+    height: 100%;
+    margin-top: 30px;
+    margin-left: 530px;
+  }
+  
+    .logo img{
+        width: 100%;
+        height: 100%;
+        margin-left: -80px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-gap: 50px;
+  }
+
+
+/*grid opsætning*/
+.gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    color: #000000;
+    font-size: 25px;
+    position: relative;
+  }
+  
+  /* the gode brød*/
+  .gallery__item--2 {
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 14;
+    text-align: center;
+  }
+  
+  .gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 14;
+    grid-row-end: 20;
+  }
+
+
+  .gallery__item--3 {
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 20;
+    grid-row-end: 50;
+  }
+
+  .gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 50;
+    grid-row-end: 60;
+  }
+
+  .overlay h2 {
+    font-size: 50px;
+  }
+  .overlay img{
+    transform: scale(2.5);
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  
+  .overlay h3{
+    font-size: 40px;
+  }
+
+  footer{
+    margin-top: 150px;
+}
+
+
+}
+
+
+/* iPad format */
+@media only screen 
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+
+    
+ /* The navigation bar */
+
+ .logo{
+  width: 100px;
+  height: 50px;
+  margin-left: 150px;
+}
+
+.navbar{
+    height: 400px;
+}
+
+/* Links iinden i navbar'en */
+.navbar a {
+  font-size: 40px;
+  transform: scale(2.5);
+  margin-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+
+}
+  .logo img{
+      width: 400px;
+      height: 200px;
+      margin-left: -80px;
+  }
+
+
+  .gallery {
+    margin-top: 400px;
+    display: grid;
+    grid-gap: 50px;
+}
+
+/*grid opsætning*/
+
+/*Intro tekst*/
+.gallery__item--5 {
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.gallery__img h2{
+  margin-top: -20px;
+  font-size: 130px;
+}
+
+.gallery__img p{
+  font-size: 100px;
+}
+
+.overlay h2 {
+  font-size: 150px;
+}
+.overlay img{
+  transform: scale(5);
+  margin-left: 100px;
+  margin-right: 150px;
+}
+
+.overlay h3{
+  font-size: 100px;
+}
+
+.overlay figcaption{
+height: 700px;
+}
+
+/* the gode brød*/
+.gallery__item--2 {
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row-start: 5;
+  grid-row-end: 14;
+  text-align: center;
+}
+
+/*billede*/
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row-start: 14;
+  grid-row-end: 20;
+}
+
+/*animation*/
+.gallery__item--3 {
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row-start: 20;
+  grid-row-end: 50;
+}
+
+/*animation*/
+.gallery__item--4 {
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row-start: 50;
+  grid-row-end: 60;
+}
+
+
+/*footer*/
+    
+footer{
+  margin-top: 500px;
+  height: 200px;
+}
+
+.some p{
+font-size: 40px;
+margin-left: 250px;
+margin-right: 300px;
+}
+
+    
+    
+        
+    
+}
+
